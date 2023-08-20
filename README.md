@@ -1,19 +1,20 @@
-# React Project 4 Documentation (Meme Generator)
+# React Project 5 Documentation (Static Page Dark and Light Mode)
 
-<img src="https://github.com/Ningsang-Jabegu/Learning-React-4/blob/main/screenshot%20of%20mem-generator.png" alt="Project Screenshots" height="400">
+<img src="https://github.com/Ningsang-Jabegu/Learning-React-5/blob/main/dark-mode.png" alt="Project Screenshots" height="400">
+<img src="https://github.com/Ningsang-Jabegu/Learning-React-5/blob/main/light-mode.png" alt="Project Screenshots" height="400">
 
 
 ## Overview
 
-This documentation provides an insight into **React Project 4**, a simple project developed for learning purposes using the React library. The project aims to demonstrate fundamental concepts of React (components) and is intended for educational purposes. Project 4 from (<a href="https://scrimba.com/learn/learnreact" target="_blank">https://scrimba.com/learn/learnreact</a>)
+This documentation provides an insight into **React Project 5**, a simple project developed for learning purposes using the React library. The project aims to demonstrate fundamental concepts of React (components) and is intended for educational purposes. Project 5 from (<a href="https://scrimba.com/learn/learnreact" target="_blank">https://scrimba.com/learn/learnreact</a>)
 
 ## Project Description
 
-**React Project 4** serves as a practical exploration of React's core principles and features. The project showcases the creation of a web application using React, allowing to grasp essential concepts in a hands-on manner.
+**React Project 5** serves as a practical exploration of React's core principles and features. The project showcases the creation of a web application using React, allowing to grasp essential concepts in a hands-on manner.
 
 ## Deployment
 
-The actual code that is ready for deployment can be found in the `build` folder of the project. To access the live version of the project, visit (<a href="https://react-project-4-by-ningsang-jabegu.netlify.app" target="_blank">https://react-project-4-by-ningsang-jabegu.netlify.app</a>). This live version offers an opportunity to interact with the application.
+The actual code that is ready for deployment can be found in the `build` folder of the project. To access the live version of the project, visit (<a href="https://react-project-5-by-ningsang-jabegu.netlify.app" target="_blank">https://react-project-5-by-ningsang-jabegu.netlify.app</a>). This live version offers an opportunity to interact with the application.
 
 ## Project Creation
 
@@ -22,23 +23,25 @@ The project was initiated using the following steps:
 1. **Create React App**: The project setup was accomplished using the Create React App tool. This streamlined the creation of a React application with the necessary configurations.
 
    ```terminal
-   npx create-react-app react-project-4
+   npx create-react-app react-project-5
 2. **Folder Structure Adjusted**: The project adheres to a specific folder structure for organization and maintainability. (build folder is what actually renders in the browser)
    ```terminal
    ├── build
       ├── (all folders that is needed to display the UI)
    ├── public
-      ├── Images
-         ├── troll-face.png
+      ├── images
+         ├── react-icon-dark.png
+         ├── react-icon-light.png
+         ├── react-icon-small.png
       ├── favicon.ico
       ├── index.html
       ├── manifest.json
       ├── robots.txt
       ├── style.css
    └── src
-      ├── Component
-         ├── Header.js
-         ├── Meme.js    
+      ├── component
+         ├── Main.js
+         ├── Navbar.js    
       ├── App.js
       ├── index.js
    ├── README.md
@@ -72,10 +75,8 @@ The project was initiated using the following steps:
 This command will create the build file, now to host the site build file need to be uploaded. In my case I use netlify, so I directly upload build file, and that will deploy the website/page.
 5.    **Usage**: The project is designed to illustrate the core concepts of React, making it an excellent resource for React beginners. By exploring the project's source code, learners can gain insights into:
 
-   - familiarize with useState
-   - using useEffect
-   - learning to modify the input box's values in React
-   - Deployment of React applications
+   - learning the basic concepts of react (untill now)
+   - Adding toggling features in react app
 5. **Contributing**: This project is intended as a learning exercise and is not actively seeking contributions. However, suggestions and feedback are always welcome.
 6. **License**: This project is licensed under the MIT License.
 
