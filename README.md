@@ -1,6 +1,9 @@
 # React Project 5 Documentation (Static Page Dark and Light Mode)
 
+<p>React Fun Fact Dark Mode</p>
 <img src="https://github.com/Ningsang-Jabegu/Learning-React-5/blob/main/dark-mode.png" alt="Project Screenshots" height="400">
+<br>
+<p>React Fun Fact light Mode</p>
 <img src="https://github.com/Ningsang-Jabegu/Learning-React-5/blob/main/light-mode.png" alt="Project Screenshots" height="400">
 
 
