@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Navbar from "./components/Navbar"
+import Main from "./components/Main"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const [darkMode, setDarkMode] = React.useState(true)
+    
+    function toggleDarkMode() {
+      const reactBadge = document.querySelector(".react-badge")
+          const body = document.querySelector("body")
+        if(darkMode) {
+          setDarkMode(prevMode => !prevMode)
+          body.style.background = "#2727275f"
+          reactBadge.style.color = "black"
+          reactBadge.style.background = "#ffffffc0"
+        } else {
+          setDarkMode(prevMode => !prevMode)
+          body.style.background = "#000000a5"
+          reactBadge.style.color = "#ffffffc0"
+          reactBadge.style.background = "#1C1C1C"
+        }
+    }
+    
+    return (
+      <>
+        
+          <div className="container">
+          <p className="react-badge">Learning-React-5 </p>
+              <Navbar 
+                  darkMode={darkMode} 
+                  toggleDarkMode={toggleDarkMode}
+              />
+              <Main darkMode={darkMode} />
+          </div>
+        </>
+    )
 }
-
-export default App;
